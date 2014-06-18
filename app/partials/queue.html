@@ -1,0 +1,22 @@
+
+<hr>
+<h3> Add aircraft to the queue: </h3>
+<p> Size: <select ng-options="size for size in sizes" ng-model="selectedSize"></select></p>
+<p> Type: <select ng-options="type for type in types" ng-model="selectedType"></select></p>
+<p> <button ng-click="enqueue();">Add to Queue</button></p>
+
+
+<hr>
+<h3> Dequeue aircraft: </h3>
+
+<p> <button ng-click="dequeue();"> Dequeue</button></p>
+
+
+<hr>
+<h3> Status:</h3>
+<p class="message">
+
+{{ message }}
+</p>
+
+
